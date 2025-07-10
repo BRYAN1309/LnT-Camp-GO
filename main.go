@@ -42,11 +42,22 @@ func main() {
 	// } else {
 	// 	fmt.Println("Nilai B")
 	// }
-	for i := 0; i < 5; i++ {
-		fmt.Println("Angka", i)
-	}
-	var buah = []string{"apel", "jeruk", "mangga", "pisang", "anggur"}
-	for _, value := range buah {
-		fmt.Println(value)
-	}
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println("Angka", i)
+	// }
+	// var buah = []string{"apel", "jeruk", "mangga", "pisang", "anggur"}
+	// for _, value := range buah {
+	// 	fmt.Println(value)
+	// }
+
+	var rumahAnjing *string
+	fmt.Println(rumahAnjing)
+
+	anjing := "puppy"
+	fmt.Println(anjing) // Output: <nil>
+
+	rumahAnjing = &anjing
+	fmt.Println(rumahAnjing)
+
+	fmt.Println(*rumahAnjing) // Output: 0xc00000a080
 }
