@@ -50,14 +50,31 @@ func main() {
 	// 	fmt.Println(value)
 	// }
 
-	var rumahAnjing *string
-	fmt.Println(rumahAnjing)
+	// var rumahAnjing *string
+	// fmt.Println(rumahAnjing)
 
-	anjing := "puppy"
-	fmt.Println(anjing) // Output: <nil>
+	// anjing := "puppy"
+	// fmt.Println(anjing) // Output: <nil>
 
-	rumahAnjing = &anjing
-	fmt.Println(rumahAnjing)
+	// rumahAnjing = &anjing
+	// fmt.Println(rumahAnjing)
 
-	fmt.Println(*rumahAnjing) // Output: 0xc00000a080
+	// fmt.Println(*rumahAnjing) // Output: 0xc00000a080
+
+	mahasiswa := struct {
+		Nama  string
+		Umur  int
+		Hobi  []string
+		Aktif bool
+	}{
+		Nama:  "Bryan",
+		Umur:  20,
+		Hobi:  []string{"membaca", "bermain game", "bersepeda"},
+		Aktif: true,
+	}
+	fmt.Println(mahasiswa)
+	fmt.Println("Nama:", mahasiswa.Nama)
+	fmt.Println("Umur:", mahasiswa.Umur)
+	fmt.Println("Hobi:", mahasiswa.Hobi)
+	fmt.Println("Aktif:", mahasiswa.Aktif)
 }
