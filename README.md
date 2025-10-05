@@ -1,1 +1,1 @@
-LnT Camp 2025
+LnT Camp 2025 Golang
